@@ -50,7 +50,9 @@ const samplePageLinks = [
 const Testing = () => (
   <Layout>
     <div className={styles.textCenter}>
+      <Link to="/">
       <StaticImage alt="logo" src="../images/alex-santafe-head.svg" />
+      </Link>
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>

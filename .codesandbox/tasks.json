@@ -11,18 +11,18 @@
   "tasks": {
     "build": {
       "name": "build",
-      "command": "npm run build",
-      "runAtStart": false
+      "command": "npm run build"
     },
     "develop": {
       "name": "develop",
       "command": "npm run develop",
-      "runAtStart": false
+      "preview": {
+        "port": 8000
+      }
     },
     "format": {
       "name": "format",
-      "command": "npm run format",
-      "runAtStart": false
+      "command": "npm run format"
     },
     "start": {
       "name": "start",
@@ -34,18 +34,15 @@
     },
     "serve": {
       "name": "serve",
-      "command": "npm run serve",
-      "runAtStart": false
+      "command": "npm run serve"
     },
     "clean": {
       "name": "clean",
-      "command": "npm run clean",
-      "runAtStart": false
+      "command": "npm run clean"
     },
     "test": {
       "name": "test",
-      "command": "npm run test",
-      "runAtStart": false
+      "command": "npm run test"
     }
   }
 }

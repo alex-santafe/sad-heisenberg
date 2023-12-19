@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -70,6 +70,7 @@ const samplePageLinks = [
   { text: "TypeScript", url: "using-typescript" },
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
+  { text: "Testing", url: "testing" },
 ]
 
 const moreLinks = [
@@ -95,7 +96,7 @@ const moreLinks = [
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
-const IndexPage = () => (
+const Testing = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
@@ -122,7 +123,15 @@ const IndexPage = () => (
         Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
-    <p>joder</p>
+    <div>
+      <p>joder</p>
+      {Photos.map((image, i) => (
+        <React.Fragment key={image.src}>
+          <Link to={image.src}>{image.title}</Link>
+          {i !== samplePageLinks.length - 1 && <> · </>}
+        </React.Fragment>
+      ))}
+    </div>
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
@@ -150,6 +159,6 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Testing" />
 
-export default IndexPage
+export default Testing

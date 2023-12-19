@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+//import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -70,6 +70,7 @@ const samplePageLinks = [
   { text: "TypeScript", url: "using-typescript" },
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
+  { text: "Testing", url: "testing" },
 ]
 
 const moreLinks = [
@@ -98,15 +99,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
+    <img src="../images/alex-santafe-head.svg"></img>
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
@@ -122,7 +115,15 @@ const IndexPage = () => (
         Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
-    <p>joder</p>
+    <div>
+      <p>joder</p>
+      {Photos.map((image, i) => (
+        <React.Fragment key={image.src}>
+          <Link to={image.src}>{image.title}</Link>
+          {i !== samplePageLinks.length - 1 && <> · </>}
+        </React.Fragment>
+      ))}
+    </div>
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>

@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import MovingHead from "../components/movinghead"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <MovingHead></MovingHead>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{

@@ -1,0 +1,43 @@
+$size: 88px;
+
+body {
+  margin: 0;
+}
+#MovingHead {
+  position: fixed;
+  z-index: 9999;
+}
+
+#MovingHead img,
+#MovingHead div {
+  width: $size;
+  height: $size;
+}
+
+.x {
+  animation: x 7s linear infinite alternate;
+  height: 1px !important;
+}
+
+.y {
+  animation: y 3s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - #{$size}));
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - #{$size}));
+  }
+}
+/*.stop-animation {
+  animation: none;
+}*/
+
+.stop-animation {
+  animation-play-state: paused;
+}

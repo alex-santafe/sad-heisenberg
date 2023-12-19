@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -8,7 +8,7 @@ import * as styles from "../components/index.module.css"
 
 const Photos = [
   {
-    src: "https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Alex-Santafe-illustration-1.jpg",
+    src: "../images/alex-santafe-1.jpg",
     alt: "illustration here2323",
     title: "joder",
     description: "goodbye",
@@ -16,7 +16,7 @@ const Photos = [
     height: "1080",
   },
   {
-    src: "https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Alex-Santafe-illustration-1.jpg",
+    src: "../images/alex-santafe-2.jpg",
     alt: "illustration here2323",
     title: "ostia",
     description: "goodbye",
@@ -24,38 +24,12 @@ const Photos = [
     height: "1080",
   },
   {
-    src: "https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Alex-Santafe-illustration-1.jpg",
+    src: "../images/alex-santafe-3.jpg",
     alt: "illustration here2323",
     title: "fuck",
     description: "goodbye",
     width: "1920",
     height: "1080",
-  },
-]
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
   },
 ]
 
@@ -73,41 +47,10 @@ const samplePageLinks = [
   { text: "Testing", url: "testing" },
 ]
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
 const Testing = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
+      <StaticImage alt="logo" src="../images/alex-santafe-head.svg" />
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
@@ -115,42 +58,30 @@ const Testing = () => (
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
+            <Link to={`/${link.url}`}>{link.text}</Link>
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <div>
       <p>joder</p>
       {Photos.map((image, i) => (
         <React.Fragment key={image.src}>
-          <Link to={image.src}>{image.title}</Link>
+          <Link to={image.src}>
+            {image.title}
+            <GatsbyImage
+              src={image.src}
+              loading="eager"
+              width={64}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+            />
+          </Link>
           {i !== samplePageLinks.length - 1 && <> · </>}
         </React.Fragment>
       ))}
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
   </Layout>
 )
 

@@ -2,6 +2,8 @@
 
 import React, { Component, useState, useEffect } from "react"
 import { animated } from "react-spring"
+import { window, document } from "browser-monads"
+
 //import { useWiggle } from "../hooks/wiggle";
 //import { Link } from "wouter";
 import { Link } from "gatsby"
@@ -70,7 +72,17 @@ function MovingHead() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
+  /*
+  const windowX = window.clientWidth;
+  const windowY = window.clientHeight;
+  const x = scrollPosition.x / (windowX - window.innerWidth);
+  const y = scrollPosition.y / (windowY - window.innerHeight);
+  */
+  /*
+const getWidth = () => window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+*/
   const x = scrollPosition.x / (document.body.clientWidth - window.innerWidth)
   const y = scrollPosition.y / (document.body.clientHeight - window.innerHeight)
 

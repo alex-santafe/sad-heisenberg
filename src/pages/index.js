@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
-//import { StaticImage } from "gatsby-plugin-image"
-
+import { StaticImage } from "gatsby-plugin-image"
+//import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -99,9 +99,6 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-    <Link to="/">
-    <StaticImage alt="logo" src="../images/alex-santafe-head.svg" />
-    </Link>
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>

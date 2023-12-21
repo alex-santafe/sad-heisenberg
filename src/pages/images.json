@@ -1,0 +1,40 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "image": "../gallery/alex-santafe-1.jpg",
+      "title": "image 2",
+      "alt": "image 1"
+    },
+    {
+      "id": 2,
+      "image": "../gallery/alex-santafe-2.jpg",
+      "title": "image 2",
+      "alt": "image 222"
+    },
+    {
+      "id": 3,
+      "image": "../gallery/alex-santafe-3.jpg",
+      "title": "image 3",
+      "alt": "image 3"
+    },
+    {
+      "id": 4,
+      "image": "../gallery/alex-santafe-4.jpg",
+      "title": "image 4",
+      "alt": "image 4"
+    },
+    {
+      "id": 5,
+      "image": "../gallery/alex-santafe-5.jpg",
+      "title": "image 5?",
+      "alt": "image 25"
+    },
+    {
+      "id": 6,
+      "image": "../gallery/alex-santafe-6.jpg",
+      "title": "image 5?",
+      "alt": "image 25"
+    }
+  ]
+}

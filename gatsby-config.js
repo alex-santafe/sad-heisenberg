@@ -23,9 +23,35 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery`,
+        path: `${__dirname}/src/gallery`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    /*{
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        formats: [`auto`, `webp`],
+        placeholder: `dominantColor`,
+      },
+    },*/
+    //`gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 75,
+          breakpoints: [250, 1920],
+          //backgroundColor: `transparent`,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -37,7 +63,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/alex-santafe-head.svg`, // This path is relative to the root of the site.
+        icon: `src/alex-santafe-head.svg`, // This path is relative to the root of the site.
       },
     },
   ],

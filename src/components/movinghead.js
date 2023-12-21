@@ -1,6 +1,6 @@
 // Navigation buenaaaa
 
-import React, { Component, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { animated } from "react-spring"
 import { window, document } from "browser-monads"
 
@@ -22,8 +22,7 @@ function MovingHead() {
 
   function handleScroll() {
     // Get the current scroll position
-    const scrollPos = window.pageYOffset
-
+    //////const scrollPos = window.pageYOffset
     // Update the value of your variable here
     // e.g. setVariableValue(scrollPos);
   }
@@ -113,13 +112,13 @@ const getWidth = () => window.innerWidth
             }}
           >
             <Link
-              href="/"
+              to="/"
               onClick={() => closeMenu()}
               style={{ cursor: "pointer" }}
             >
               <img
                 src={
-                  navbarOpen
+                  isHovering
                     ? //https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Group%2044.svg?v=1687696761955
                       //? "https://cdn.glitch.global/a44f2617-a9bb-43c2-a85a-e742871da59a/alex-santafe-closed.svg?v=1643860557805"
                       //: "https://cdn.glitch.global/a44f2617-a9bb-43c2-a85a-e742871da59a/alex-santafe-open.svg?v=1643860557805"

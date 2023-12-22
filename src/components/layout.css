@@ -32,12 +32,14 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
+  background: var(--color-primary);
 }
 
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
+  background: #fff;
   font-family: sans-serif;
   font-family: var(--font-sans);
   font-weight: normal;
@@ -45,6 +47,7 @@ body {
   word-wrap: break-word;
   font-family: "Cormorant Garamond", -apple-system, serif;
   /*font-family: "Hanken Grotesk", -apple-system, serif;*/
+  border: 3px solid var(--color-primary);
 }
 header a {
   font-size: 2rem;
@@ -228,4 +231,39 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 574px) {
+  .dot {
+    display: none;
+  }
+  .title_padding {
+    margin-left: 0;
+  }
+  .title_style {
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 574px) {
+  .header_title {
+    display: flex;
+  }
+  .dot {
+    font-size: 2em;
+    line-height: 12px;
+    position: absolute;
+    margin: 8px;
+    color: var(--color-primary);
+  }
+  .title_padding {
+    margin-left: 30px;
+  }
+  .title_style {
+    font-size: 40px;
+    line-height: 42px;
+    margin: 0;
+  }
 }

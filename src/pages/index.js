@@ -200,6 +200,9 @@ const Testing = ({ data }) => {
             type="button"
             className="caja__close-button"
             onClick={closeLightbox}
+            style={{
+              color: `${lightboxTextColor}`,
+            }}
           >
             &times;
           </button>
@@ -243,6 +246,7 @@ const Testing = ({ data }) => {
               }
             />
             {/*<p>{lightboxColor}</p>*/}
+
             <button
               type="button"
               className="caja__bg"

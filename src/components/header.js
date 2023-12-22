@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
     }}
   >
-    <div style={{ display: "flex" }}>
+    <div className="header_title" style={{}}>
       <Link
         to="/"
         style={{
@@ -21,22 +21,27 @@ const Header = ({ siteTitle }) => (
           fontFamily: `Hanken Grotesk`,
           fontWeight: `700`,
           letterSpacing: `-0.5px`,
+          lineHeight: `100%`,
         }}
       >
         {siteTitle}
       </Link>
-      <p style={{ fontSize: "32px", lineHeight: "44px" }}>
+      <p className="title_style" style={{  }}>
         <span
-          style={{
-            fontSize: "2em",
-            lineHeight: "18px",
+          className="dot"
+          style={
+            {
+              /* fontSize: "2em",
+            lineHeight: "32px",
             position: "absolute",
             margin: "8px",
-          }}
+            color: "var(--color-primary)", */
+            }
+          }
         >
           ·
         </span>{" "}
-        <span style={{ marginLeft: "26px" }}> Illustration </span>
+        <span className="title_padding" style={{  }}> Illustration </span>
       </p>
     </div>
     {/*

@@ -1,40 +1,46 @@
 {
   "content": [
     {
-      "id": 1,
-      "image": "../gallery/alex-santafe-1.jpg",
-      "title": "image 2",
-      "alt": "image 1"
+      "id": 2,
+      "image": "alex-santafe-1.jpg",
+      "title": "Cyberbullying",
+      "description": "Article about XXX in The China Project",
+      "alt": "An illustration by Alex Santafe depicting a girl crying while being bullyied over the internet"
     },
     {
-      "id": 2,
-      "image": "../gallery/alex-santafe-2.jpg",
-      "title": "image 2",
-      "alt": "image 222"
+      "id": 1,
+      "image": "alex-santafe-2.jpg",
+      "title": "Scientific discovery",
+      "description": "Article about XXX in The China Project",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists in the verge of discovery"
     },
     {
       "id": 3,
-      "image": "../gallery/alex-santafe-3.jpg",
-      "title": "image 3",
-      "alt": "image 3"
+      "image": "alex-santafe-3.jpg",
+      "title": "Workplace observers",
+      "description": "Article about XXX in The China Project",
+      "alt": "An illustration by Alex Santafe depicting a business owner watching over he's employees in China"
     },
     {
       "id": 4,
-      "image": "../gallery/alex-santafe-4.jpg",
+      "image": "alex-santafe-4.jpg",
       "title": "image 4",
+      "description": "image 4",
       "alt": "image 4"
     },
     {
       "id": 5,
-      "image": "../gallery/alex-santafe-5.jpg",
+      "image": "alex-santafe-5.jpg",
       "title": "image 5?",
+      "description": "image 4",
       "alt": "image 25"
     },
     {
       "id": 6,
-      "image": "../gallery/alex-santafe-6.jpg",
-      "title": "image 5?",
-      "alt": "image 25"
+      "image": "alex-santafe-6.jpg",
+      "title": "Here, here",
+      "description": "Article about XXX in The China Project",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud"
     }
   ]
 }

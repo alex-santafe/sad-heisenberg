@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import "../fonts/fonts.css"
 import MovingHead from "../components/movinghead"
 
 const Layout = ({ children }) => {
@@ -31,7 +32,8 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           //maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
+          //padding: `var(--size-gutter)`,
+          padding: "0 32px",
         }}
       >
         <main>{children}</main>

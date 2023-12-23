@@ -3,12 +3,36 @@
 import React, { useState, useEffect } from "react"
 import { animated } from "react-spring"
 import { window, document } from "browser-monads"
+import "../components/caja.css"
 
 //import { useWiggle } from "../hooks/wiggle";
 //import { Link } from "wouter";
 import { Link } from "gatsby"
 import "../components/hairstyle.scss"
 
+const samplePageLinks = [
+  {
+    text: "Illustration",
+    url: "",
+    badge: false,
+    description:
+      "A simple example of linking to another page within a Gatsby site",
+  },
+  {
+    text: "About",
+    url: "about",
+    badge: false,
+    description:
+      "A simple example of linking to another page within a Gatsby site",
+  },
+  {
+    text: "Contact",
+    url: "using-ssr",
+    badge: false,
+    description:
+      "A simple example of linking to another page within a Gatsby site",
+  },
+]
 function MovingHead() {
   useEffect(() => {
     // Set up event listener for scroll events
@@ -29,9 +53,11 @@ function MovingHead() {
   //const [style, trigger] = useWiggle({ x: 5, y: 5, scale: 1 });
   const [navbarOpen, setNavbarOpen] = useState(false)
   const handleToggle = () => {
-    //setNavbarOpen(!navbarOpen);
-    //window.location.href = "mailto:alexsantafe@gmail.com";
-    // window.open('mailto:alexsantafe@gmail.com', '_blank');
+    setNavbarOpen(!navbarOpen)
+    //console.log("navbarOpen")
+    setNavbarOpen(prev => !prev)
+    //window.location.href = "mailto:alexsantafe@gmail.com"
+    //window.open("mailto:alexsantafe@gmail.com", "_blank")
   }
   const closeMenu = () => {
     setNavbarOpen(false)
@@ -92,44 +118,87 @@ const getWidth = () => window.innerWidth
 
   return (
     <>
+      <div
+        className={`menu-nav${navbarOpen ? " show-menu" : ""}`}
+        styles={{
+          background: `var(--color-primary)`,
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <nav className="navbar">
+          <button
+            type="button"
+            className="caja__close-button"
+            onClick={() => setNavbarOpen(prev => !prev)}
+            style={{
+              color: "#FFFFFF",
+              fontSize: "48px",
+              top: ".5rem",
+              right: "1rem",
+              position: "fixed",
+            }}
+          >
+            &times;
+            {
+              //navbarOpen ? `&times` : "open"
+            }
+          </button>
+          <div className="navbar" style={{ margin: "2rem" }}>
+            <ul>
+              {samplePageLinks.map((link, i) => (
+                <React.Fragment key={link.url}>
+                  <li>
+                    <span>0{i + 1}</span>-
+                    <Link
+                      to={`/${link.url}`}
+                      onClick={() => setNavbarOpen(prev => !prev)}
+                    >
+                      {link.text}
+                    </Link>
+                    {/* i !== samplePageLinks.length - 1 && <> · </> */}
+                  </li>
+                </React.Fragment>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </div>
       <div id="MovingHead">
         <animated.div
           onMouseEnter={() => {
-            handleChangeHello()
             toggleAnimation()
           }}
           className={`x ${isHovering ? "stop-animation" : ""}`}
           onClick={() => {
             toggleAnimation()
+            handleToggle()
             setIsHovering(!isHovering)
+            setNavbarOpen(prev => !prev)
           }}
         >
           <div
             className={`y ${isHovering ? "stop-animation" : ""}`}
-            onClick={() => {
-              toggleAnimation()
-              setIsHovering(!isHovering)
-            }}
+            onClick={() => (
+              toggleAnimation(),
+              //console.log("clickhead"),
+              setIsHovering(!isHovering),
+              setNavbarOpen(prev => !prev)
+            )}
           >
-            <Link
-              to="/"
-              onClick={() => closeMenu()}
-              style={{ cursor: "pointer" }}
-            >
-              <img
-                src={
-                  isHovering
-                    ? //https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Group%2044.svg?v=1687696761955
-                      //? "https://cdn.glitch.global/a44f2617-a9bb-43c2-a85a-e742871da59a/alex-santafe-closed.svg?v=1643860557805"
-                      //: "https://cdn.glitch.global/a44f2617-a9bb-43c2-a85a-e742871da59a/alex-santafe-open.svg?v=1643860557805"
-                      "https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Group%2044.svg"
-                    : "https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/alex-santafe-logo.svg?v=1687795856173"
-                }
-                className=""
-                alt={navbarOpen ? "hello" : "goodbye"}
-                //onClick={handleToggle}
-              />
-            </Link>
+            <img
+              src={
+                isHovering
+                  ? //https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Group%2044.svg?v=1687696761955
+                    //? "https://cdn.glitch.global/a44f2617-a9bb-43c2-a85a-e742871da59a/alex-santafe-closed.svg?v=1643860557805"
+                    //: "https://cdn.glitch.global/a44f2617-a9bb-43c2-a85a-e742871da59a/alex-santafe-open.svg?v=1643860557805"
+                    "https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/Group%2044.svg"
+                  : "https://cdn.glitch.global/f4eb5f23-47fe-4e21-8ff7-89cac12f9c1c/alex-santafe-logo.svg?v=1687795856173"
+              }
+              className=""
+              alt={navbarOpen ? "hello" : "goodbye"}
+              //onClick={handleToggle}
+            />
           </div>
         </animated.div>
       </div>

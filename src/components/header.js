@@ -4,7 +4,8 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      margin: `0 auto`,
+      //margin: `0 auto`,
+      marginTop: `1rem`,
       padding: `var(--space-4) var(--size-gutter)`,
       display: `flex`,
       alignItems: `center`,
@@ -20,13 +21,13 @@ const Header = ({ siteTitle }) => (
           textDecoration: `none`,
           fontFamily: `Hanken Grotesk`,
           fontWeight: `700`,
-          letterSpacing: `-0.5px`,
+          letterSpacing: `-1px`,
           lineHeight: `100%`,
         }}
       >
         {siteTitle}
       </Link>
-      <p className="title_style" style={{  }}>
+      <p className="title_style" style={{}}>
         <span
           className="dot"
           style={
@@ -41,7 +42,10 @@ const Header = ({ siteTitle }) => (
         >
           ·
         </span>{" "}
-        <span className="title_padding" style={{  }}> Illustration </span>
+        <span className="title_padding" style={{}}>
+          {" "}
+          Illustration{" "}
+        </span>
       </p>
     </div>
     {/*

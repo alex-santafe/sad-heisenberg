@@ -85,7 +85,7 @@ const Testing = ({ data }) => {
           //console.log(src)
           const color =
             item.node.childImageSharp.gatsbyImageData.backgroundColor
-          console.log(color)
+          //console.log(color)
           //
           /*
           function pickTextColorBasedOnBgColorAdvanced(
@@ -134,7 +134,7 @@ const Testing = ({ data }) => {
             "#FFFFFF",
             "#000000"
           )
-          console.log(textColor)
+          //console.log(textColor)
           //console.log(backgroundColor)
           //console.log("item is " + item.node.relativePath)
           //return JSONData.content.map((jItem, jIndex) => {
@@ -148,7 +148,7 @@ const Testing = ({ data }) => {
             //console.log(src)
             //console.log(alt)
             //console.log(title)
-            console.log("jItem is " + item.node.relativePath)
+            //console.log("jItem is " + item.node.relativePath)
 
             if (image == item.node.relativePath)
               return (
@@ -158,7 +158,7 @@ const Testing = ({ data }) => {
                   style={{ justifyContent: "center" }}
                   key={jIndex}
                   onClick={
-                    () => (
+                    () =>
                       openLightbox(
                         src,
                         alt,
@@ -166,9 +166,8 @@ const Testing = ({ data }) => {
                         color,
                         description,
                         textColor
-                      ),
-                      console.log("open!")
-                    ) // //
+                      ) //,
+                      // console.log("open!") // //
                   }
                 >
                   {/* <p>
@@ -222,7 +221,7 @@ const Testing = ({ data }) => {
                   fontSize: `var(--font-lg)`,
                   fontWeight: "700",
                   marginBottom: "0",
-                  fontFamily: `Henken Grotesk`,
+                  fontFamily: `Hanken Grotesk`,
                 }}
               >
                 {lightboxTitle}
@@ -231,19 +230,28 @@ const Testing = ({ data }) => {
                 {lightboxDescription}
               </p>
             </div>
+            <button
+              type="button"
+              style={{
+                position: "fixed",
+                width: "100%",
+                height: "100%",
+                zIndex: "3",
+                cursor: "pointer",
+              }}
+              onClick={closeLightbox}
+            />
             <GatsbyImage
               className="gallery__image"
               image={lightboxImage}
               alt={lightboxAltImage}
               loading="lazy"
-              style={{ margin: "1rem" }}
+              style={{ margin: "1rem", maxHeight: "80vh" }}
               placeholder="dominantColor"
+              layout="fixed"
+              objectFit="contain"
               //onClick={closeLightbox}
-              onClick={
-                () => ({
-                  closeLightbox,
-                }) //console.log("closed!"), console.log("yeah"),  //, openLightbox(src, alt, title), ) // //
-              }
+              onClick={closeLightbox}
             />
             {/*<p>{lightboxColor}</p>*/}
 
@@ -294,7 +302,12 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            gatsbyImageData(backgroundColor: "", layout: CONSTRAINED)
+            gatsbyImageData(
+              backgroundColor: ""
+              layout: CONSTRAINED
+              quality: 75
+              width: 1920
+            )
           }
           relativePath
         }

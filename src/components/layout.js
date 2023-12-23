@@ -41,11 +41,12 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
+            marginBottom: `var(--space-5)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          © {new Date().getFullYear()} &middot; Alex Santafé - Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          Gatsby
         </footer>
       </div>
     </>

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+const title = "About"
 const SecondPage = () => (
   <Layout>
     <h1>Hi from the second page</h1>
@@ -12,6 +12,6 @@ const SecondPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Page two" />
+export const Head = () => <Seo title={title} />
 
 export default SecondPage

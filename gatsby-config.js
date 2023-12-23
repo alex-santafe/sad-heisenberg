@@ -13,6 +13,10 @@ module.exports = {
     description: `Illustration`,
     author: `Alex Santafe`,
     siteUrl: `https://alexsantafe.com`,
+    social: {
+      twitter: `alex_santafe`,
+      linkedin: `alex_santafe`,
+    },
   },
   plugins: [
     {

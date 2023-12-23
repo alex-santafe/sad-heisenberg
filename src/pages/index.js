@@ -28,6 +28,7 @@ const samplePageLinks = [
 //console.log(Photos)
 
 const Testing = ({ data }) => {
+  
   //const pics = data.allFile.edges.node
   const image = getImage(data.allFile.edges.node)
   const newData = data.allFile.edges.slice().reverse()
@@ -295,7 +296,7 @@ const Testing = ({ data }) => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Testing" />
+export const Head = () => <Seo title="Illustration" />
 export const query = graphql`
   query Testing {
     allFile(filter: { sourceInstanceName: { eq: "gallery" } }) {

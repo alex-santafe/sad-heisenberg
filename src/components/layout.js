@@ -13,7 +13,16 @@ import "./layout.css"
 import "../fonts/fonts.css"
 import MovingHead from "../components/movinghead"
 
-const Layout = ({ children }) => {
+/*
+export default function Layout({ children }) {
+  return (
+    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>
+      {children}
+    </div>
+  )
+}
+*/
+const Layout = ({ children, headerChild }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,7 +39,10 @@ const Layout = ({ children }) => {
       <Header
         siteTitle={data.site.siteMetadata?.title || `Title`}
         //path={data.site.siteMetadata?.siteUrl}
-      />
+        headerChild={headerChild}
+      >
+        {headerChild}
+      </Header>
       <div
         style={{
           margin: `0 auto`,
@@ -40,18 +52,24 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-            marginBottom: `var(--space-5)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Alex Santafé - Built with
-          {` `}
-          Gatsby
-        </footer>
       </div>
+      <footer
+        style={{
+          background: `var(--color-primary)`,
+          marginTop: `var(--space-5)`,
+          paddingLeft: `var(--space-5)`,
+          paddingTop: `var(--space-4)`,
+          paddingBottom: `var(--space-4)`,
+          fontSize: `var(--font-sm)`,
+          //padding: `var(--space-2)`,
+          // paddingTop: `var(--space-3)`,
+          color: `#FFFFFF`,
+        }}
+      >
+        © {new Date().getFullYear()} &middot; Alex Santafé - Built with
+        {` `}
+        Gatsby
+      </footer>
     </>
   )
 }

@@ -28,10 +28,10 @@ const samplePageLinks = [
 //console.log(Photos)
 
 const Testing = ({ data }) => {
-  
+  const headerChild = "Illustration"
   //const pics = data.allFile.edges.node
-  const image = getImage(data.allFile.edges.node)
-  const newData = data.allFile.edges.slice().reverse()
+  //const image = getImage(data.allFile.edges.node)
+  const newData = data.allFile.edges.reverse()
   //
   const [lightboxImage, setLightboxImage] = useState("")
   const [lightboxAltImage, setLightboxAltImage] = useState("")
@@ -57,7 +57,7 @@ const Testing = ({ data }) => {
 
   //
   return (
-    <Layout>
+    <Layout headerChild={headerChild}>
       <div className="">
         <Link to="/"></Link>
         <h1
@@ -168,7 +168,7 @@ const Testing = ({ data }) => {
                         description,
                         textColor
                       ) //,
-                      // console.log("open!") // //
+                    // console.log("open!") // //
                   }
                 >
                   {/* <p>
@@ -186,6 +186,7 @@ const Testing = ({ data }) => {
                     layout="constrained"
                     placeholder="dominantColor"
                   />
+                  <p>{image}</p>
                 </span>
               )
 
@@ -299,7 +300,10 @@ const Testing = ({ data }) => {
 export const Head = () => <Seo title="Illustration" />
 export const query = graphql`
   query Testing {
-    allFile(filter: { sourceInstanceName: { eq: "gallery" } }) {
+    allFile(
+      filter: { sourceInstanceName: { eq: "gallery" } }
+      sort: { relativePath: DESC }
+    ) {
       edges {
         node {
           childImageSharp {

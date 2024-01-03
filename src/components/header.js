@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 //import { useStaticQuery, graphql } from "gatsby"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, headerChild }) => (
   <header
     style={{
       //margin: `0 auto`,
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
           textDecoration: `none`,
           fontFamily: `Hanken Grotesk`,
           fontWeight: `700`,
-          letterSpacing: `-1px`,
+          letterSpacing: `-1.7px`,
           lineHeight: `100%`,
         }}
       >
@@ -45,7 +45,8 @@ const Header = ({ siteTitle }) => (
         </span>{" "}
         <span className="title_padding" style={{}}>
           {" "}
-          Illustration{" "}
+          {/*} Illustration{" "} */}
+          {headerChild}
         </span>
       </p>
     </div>

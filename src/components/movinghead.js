@@ -4,6 +4,15 @@ import React, { useState, useEffect } from "react"
 import { animated } from "react-spring"
 import { window, document } from "browser-monads"
 import "../components/caja.css"
+//social
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import {
+  faLinkedin,
+  faWeixin,
+  faSquareWhatsapp,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons"
 
 //import { useWiggle } from "../hooks/wiggle";
 //import { Link } from "wouter";
@@ -33,7 +42,38 @@ const samplePageLinks = [
       "A simple example of linking to another page within a Gatsby site",
   },
 ]
-function MovingHead() {
+/*
+faLinkedin,
+  faWeixin,
+  faSquareWhatsapp,
+  faEnvelope,
+  faSquareInstagram,
+  */
+const socialLinks = [
+  {
+    text: "Email",
+    url: "mailto:alexsantafe@gmail.com",
+    description: "faLinkedin",
+  },
+  {
+    text: "Linked In",
+    url: "https://www.linkedin.com/in/alexsantafe/",
+    description: "faLinkedin",
+  },
+  {
+    text: "Instagram",
+    url: "https://www.instagram.com/alexsantafe/",
+    description: "faSquareInstagram",
+  },
+  {
+    text: "Whatsapp",
+    url: "https://www.instagram.com/alexsantafe/",
+    description: "fas faSquareWhatsapp",
+  },
+]
+//({ siteTitle })
+function MovingHead({ siteTitle }) {
+  //function MovingHead() {
   useEffect(() => {
     // Set up event listener for scroll events
     window.addEventListener("scroll", handleScroll)
@@ -121,48 +161,179 @@ const getWidth = () => window.innerWidth
       <div
         className={`menu-nav${navbarOpen ? " show-menu" : ""}`}
         styles={{
-          background: `var(--color-primary)`,
-          width: "100%",
-          height: "100%",
+          //background: `var(--color-primary)`,
+          width: `100%`,
+          height: `100%`,
+          margin: `2rem`,
+          display: `flex`,
         }}
       >
-        <nav className="navbar">
-          <button
-            type="button"
-            className="caja__close-button"
-            onClick={() => setNavbarOpen(prev => !prev)}
+        <div
+          style={{
+            margin: "2rem",
+            display: "flex",
+            flexDirection: `column`,
+            justifyContent: `space-between`,
+            minHeight: "calc(100% - 2rem)",
+          }}
+        >
+          <span
             style={{
-              color: "#FFFFFF",
-              fontSize: "48px",
-              top: ".5rem",
-              right: "1rem",
-              position: "fixed",
+              //fontSize: `var(--font-sm)`,
+              fontSize: `2rem`,
+              textDecoration: `none`,
+              fontFamily: `Hanken Grotesk`,
+              fontWeight: `700`,
+              letterSpacing: `-1px`,
+              lineHeight: `100%`,
+              color: `#FFFFFF`,
+              //color: `#2929e9`,
+              marginLeft: "2rem",
+              //paddingBottom: "1rem",
             }}
           >
-            &times;
-            {
-              //navbarOpen ? `&times` : "open"
-            }
-          </button>
-          <div className="navbar" style={{ margin: "2rem" }}>
-            <ul>
-              {samplePageLinks.map((link, i) => (
-                <React.Fragment key={link.url}>
-                  <li>
-                    <span>0{i + 1}</span>-
-                    <Link
-                      to={`/${link.url}`}
-                      onClick={() => setNavbarOpen(prev => !prev)}
-                    >
-                      {link.text}
-                    </Link>
-                    {/* i !== samplePageLinks.length - 1 && <> · </> */}
-                  </li>
-                </React.Fragment>
-              ))}
-            </ul>
+            Alex Santafé
+          </span>
+
+          <nav className="navbar" style={{}}>
+            <button
+              type="button"
+              className="caja__close-button"
+              onClick={() => setNavbarOpen(prev => !prev)}
+              style={{
+                color: "#FFFFFF",
+                fontSize: "48px",
+                top: ".5rem",
+                right: "1rem",
+                position: "fixed",
+              }}
+            >
+              &times;
+              {
+                //navbarOpen ? `&times` : "open"
+              }
+            </button>
+
+            <div className="navbar" style={{ margin: "2rem" }}>
+              <ul>
+                {samplePageLinks.map((link, i) => (
+                  <React.Fragment key={link.url}>
+                    <li>
+                      {/* <span>0{i + 1}</span>- */}
+                      <Link
+                        to={`/${link.url}`}
+                        onClick={() => setNavbarOpen(prev => !prev)}
+                      >
+                        {link.text}
+                      </Link>
+                      {/* i !== samplePageLinks.length - 1 && <> · </> */}
+                    </li>
+                  </React.Fragment>
+                ))}
+              </ul>
+            </div>
+          </nav>
+          <div
+            style={{
+              margin: "2rem",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
+            <span
+              style={{
+                //fontSize: `var(--font-sm)`,
+                fontSize: `1.25rem`,
+                textDecoration: `none`,
+
+                lineHeight: `100%`,
+                color: `#ffffff`,
+              }}
+            >
+              <p>Contact</p>
+              <h2
+                style={{
+                  margin: "0",
+                  fontWeight: "400",
+                  fontSize: "var(--font-md)",
+                }}
+              >
+                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                  <a
+                    href="mailto:alexsantafe@gmail.com"
+                    style={{ color: "#FFFFFF" }}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      style={{ marginRight: "16px", width: "24px" }}
+                      icon={faEnvelope}
+                    />
+                    Email
+                  </a>
+                </li>
+                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                  <a
+                    href="https://www.linkedin.com/in/alexsantafe/"
+                    style={{ color: "#FFFFFF" }}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      style={{ marginRight: "16px", width: "24px" }}
+                      icon={faLinkedin}
+                    />
+                    LinkedIn
+                  </a>
+                </li>
+                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                  <a
+                    href="https://www.instagram.com/alexsantafe/"
+                    style={{ color: "#FFFFFF", gap: "1.25rem" }}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      style={{ marginRight: "16px", width: "24px" }}
+                      icon={faSquareInstagram}
+                    />
+                    Instagram
+                  </a>
+                </li>
+                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                  <a
+                    href="https://www.instagram.com/alexsantafe/"
+                    style={{ color: "#FFFFFF", gap: "1.25rem" }}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      style={{ marginRight: "16px", width: "24px" }}
+                      icon={faWeixin}
+                    />
+                    WeChat
+                  </a>
+                </li>
+                {/*
+                    
+                    {socialLinks.map(link => (
+                      <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                        <FontAwesomeIcon icon={`${link.description}`} />
+                        {/* <FontAwesomeIcon icon={faWeixin} />
+                          <FontAwesomeIcon icon={faSquareWhatsapp} />
+                    <FontAwesomeIcon icon={faSquareInstagram} /> 
+                        {console.log(link.description)}
+                        <a
+                          href={`${link.url}`}
+                          style={{ color: "#FFFFFF" }}
+                          target="_blank"
+                        >
+                          {link.text}
+                        </a>
+                      </li>
+                    ))
+                    */}
+              </h2>
+            </span>
           </div>
-        </nav>
+        </div>
       </div>
       <div id="MovingHead">
         <animated.div

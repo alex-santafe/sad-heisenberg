@@ -2,6 +2,7 @@
   "content": [
     {
       "id": 1,
+
       "image": "alex-santafe-01.jpg",
       "title": "Cyberbullying",
       "description": "Editorial illustration for the article: Cyberbullying trial tests China`s determination to fight online abuse.",
@@ -47,6 +48,7 @@
     },
     {
       "id": 6,
+      "position": "left",
       "image": "alex-santafe-06.jpg",
       "title": "Monkey Business",
       "description": "Editorial illustration for the article: COVID`s monkey business: The booming market for laboratory test animals",
@@ -65,6 +67,7 @@
     },
     {
       "id": 6,
+      "position": "right",
       "image": "alex-santafe-08.jpg",
       "title": "China's Chipset game",
       "description": "Editorial illustration for the article: The U.S. deals another blow to China's chip industry and Beijing reacts with a trillion yuan plan",
@@ -74,6 +77,7 @@
     },
     {
       "id": 6,
+      "position": "right",
       "image": "alex-santafe-09.jpg",
       "title": "XPeng Crash",
       "description": "Editorial illustration for the article: Electric car star XPeng had a disappointing first quarter",
@@ -92,6 +96,7 @@
     },
     {
       "id": 6,
+      "position": "left",
       "image": "alex-santafe-12.jpg",
       "title": "Coal usage plateaus in China",
       "description": "Editorial illustration for the article: China is going to use less coal, despite reports to the contrary",
@@ -101,6 +106,7 @@
     },
     {
       "id": 6,
+      "position": "left",
       "image": "alex-santafe-14.jpg",
       "title": "Has China's AI bubble burst?",
       "description": "Editorial illustration for the article: Has China's AI bubble burst?",
@@ -128,6 +134,7 @@
     },
     {
       "id": 6,
+      "position": "left",
       "image": "alex-santafe-17.jpg",
       "title": "China's jet engines",
       "description": "Editorial illustration for the article: China’s real but gradual progress in developing its own jet engines",
@@ -192,6 +199,7 @@
     {
       "id": 6,
       "image": "alex-santafe-25.jpg",
+      "position": "right",
       "title": "China's Costco",
       "description": "Editorial illustration for the article: Costco entered China at the right time but can its success last?",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
@@ -209,66 +217,58 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-27.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "client": "The China Project",
-      "url": ""
-    },
-    {
-      "id": 6,
       "image": "alex-santafe-28.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "The Battle of Red Cliffs",
+      "description": "Editorial illustration for the article: The Battle of Red Cliffs and the blurring of fact and fiction",
+      "alt": "An illustration by Alex Santafe depicting a naval battle in the Yangtze River during Han Dinasty.",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/02/15/the-battle-of-red-cliffs-and-the-blurring-of-fact-and-fiction/"
     },
     {
       "id": 6,
       "image": "alex-santafe-29.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Battle of Tunmen",
+      "description": "Editorial illustration for the article: Battle of Tunmen: The first clash between China and Europe",
+      "alt": "An illustration by Alex Santafe depicting a battle in the Pearl River between Portuguese and Ming Chinese",
       "client": "The China Project",
-      "url": ""
-    },
-    {
-      "id": 6,
-      "image": "alex-santafe-30.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/05/10/battle-of-tunmen-the-first-clash-between-china-and-europe/"
     },
     {
       "id": 6,
       "image": "alex-santafe-31.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "China looks to the Western classics",
+      "description": "Editorial illustration for the article: China looks to the Western classics",
+      "alt": "An illustration by Alex Santafe depicting a chinese university classroom with a student dressed with a roman toga reading",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/01/13/china-looks-to-the-western-classics/"
     },
+    {
+      "id": 6,
+      "image": "alex-santafe-301.jpg",
+      "title": "The origins of Peking Opera",
+      "description": "Editorial illustration for the article: The origins of Peking Opera",
+      "alt": "An illustration by Alex Santafe depicting a group of artists performing Chinese Opera",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/09/28/the-origins-of-peking-opera/"
+    },
+
     {
       "id": 6,
       "image": "alex-santafe-32.jpg",
       "title": "Scientists behind the Great Wall",
       "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists conducting experiments looking at the sun setting in a Western country behind the Great Wall of China",
       "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-33.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
+      "title": "Prosperity Age",
+      "description": "Editorial illustration for the article: Where to invest in China's 'common prosperity' age",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/01/05/six-growth-sectors-to-watch-in-2022/"
     },
     {
       "id": 6,
@@ -282,11 +282,11 @@
     {
       "id": 6,
       "image": "alex-santafe-35.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Student Demonstration 1928",
+      "description": "Editorial illustration for the article: The '11-9 incident': When police fired on Chinese student protesters",
+      "alt": "An illustration by Alex Santafe depicting a group of students demonstrating in Beijing 1928",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/11/09/the-11-9-incident-when-police-fired-on-chinese-student-protesters/"
     },
     {
       "id": 6,
@@ -300,38 +300,39 @@
     {
       "id": 6,
       "image": "alex-santafe-37.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "China's Real Estate",
+      "description": "Editorial illustration for the article: China's property sector is on shaky grounds but one company says its books are clean",
+      "alt": "An illustration by Alex Santafe depicting some chopsticks picking a building",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/05/13/chinas-property-sector-is-on-shaky-grounds-but-one-company-says-its-books-are-clean/"
     },
     {
       "id": 6,
       "image": "alex-santafe-38.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Tiktok under the microscope",
+      "position": "left",
+      "description": "Editorial illustration for the article: TikTok’s hopeless quest to prove it’s American enough",
+      "alt": "An illustration by Alex Santafe depicting a person looking TikTok under the microscope with a magnifyied version showing the Comunist Party logo (Hammer and Sickle)",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/03/28/tiktoks-hopeless-quest-to-prove-its-american-enough/"
     },
     {
       "id": 6,
       "image": "alex-santafe-39.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Empires of lies",
+      "description": "Editorial illustration for the article: Empires of lies",
+      "alt": "An illustration by Alex Santafe depicting a chinese polititian dumping trash on the U.S. alongside an American polititian dressed like uncle Sam, dumping trash on China",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/10/20/empires-of-lies/"
     },
     {
       "id": 6,
       "image": "alex-santafe-40.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "快递员 - Delivery Guy",
+      "description": "Editorial illustration for the article: How China's ecommerce helped stamp out the pandemic",
+      "alt": "An illustration by Alex Santafe depicting a delivery guy (kuai di yuan) among many packages and a classic tricycle",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2021/02/16/how-chinas-ecommerce-helped-stamp-out-the-pandemic/"
     },
     {
       "id": 6,
@@ -344,52 +345,44 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-42.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "client": "The China Project",
-      "url": ""
-    },
-    {
-      "id": 6,
       "image": "alex-santafe-43.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Philip Kuhn, Soulstealers",
+      "description": "Editorial illustration for the article: Philip Kuhn, What an 18th-century sorcery scare tells us about imperial China",
+      "alt": "An illustration by Alex Santafe depicting a man cutting another man's hair, while a third man is picking up some hair to create a puppet and still the hair's owner soul.",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/06/15/what-an-18th-century-sorcery-scare-tells-us-about-imperial-china/"
     },
     {
       "id": 6,
       "image": "alex-santafe-44.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "China's economy stimulus plan after COVID",
+      "description": "Editorial illustration for the article: Beijing's stimulus plans to get out of the COVID lockdown slump",
+      "alt": "An illustration by Alex Santafe depicting a Chinese POlititian speaking in public showing some economic reforms after COVID",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/06/01/beijings-stimulus-plans-to-get-out-of-the-covid-lockdown-slump/"
     },
     {
       "id": 6,
       "image": "alex-santafe-45.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "China's rare earths",
+      "description": "Editorial illustration for the article: More consolidation for China’s rare earths industry as Beijing seeks geopolitical leverage",
+      "alt": "An illustration by Alex Santafe depicting an excavator working on mountains of rare earths of different colors",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/06/06/more-consolidation-for-chinas-rare-earths-industry-as-beijing-seeks-geopolitical-leverage/"
     },
     {
       "id": 6,
-      "image": "alex-santafe-46.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "client": "The China Project",
-      "url": ""
-    },
-    {
-      "id": 6,
+      "position": "right",
       "image": "alex-santafe-47.jpg",
+      "title": "Xinjiang Smart oil fields",
+      "description": "Editorial illustration for the article: Xinjiang's emerging digital economy includes 'smart oil fields'",
+      "alt": "An illustration by Alex Santafe depicting a couple of workers on CNCP plant with screens showing automatized oil fields on the background",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/07/20/xinjiangs-emerging-digital-economy-includes-smart-oil-fields/"
+    },
+    {
+      "id": 6,
+      "image": "alex-santafe-46.png",
       "title": "Here, here",
       "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",

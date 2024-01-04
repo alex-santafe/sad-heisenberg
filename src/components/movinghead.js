@@ -341,6 +341,7 @@ const getWidth = () => window.innerWidth
             toggleAnimation()
           }}
           className={`x ${isHovering ? "stop-animation" : ""}`}
+          styles={{ top: "1rem", right: "2rem" }}
           onClick={() => {
             toggleAnimation()
             handleToggle()

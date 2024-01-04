@@ -195,6 +195,7 @@ const Testing = ({ data }) => {
                   <GatsbyImage
                     className="gallery__image"
                     image={item.node.childImageSharp.gatsbyImageData}
+                    objectPosition={jItem.position}
                     alt={alt}
                     key={jIndex}
                     loading="lazy"

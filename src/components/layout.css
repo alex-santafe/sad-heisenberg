@@ -226,6 +226,9 @@ tt:after {
   content: "\00a0";
   letter-spacing: -0.2em;
 }
+#___gatsby {
+  display: flex;
+}
 pre code:before,
 pre code:after,
 pre tt:before,
@@ -267,4 +270,3 @@ pre tt:after {
     margin: 0;
   }
 }
-

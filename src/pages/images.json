@@ -1,419 +1,445 @@
 {
   "content": [
     {
-      "id": 2,
-      "image": "alex-santafe-1.jpg",
+      "id": 1,
+      "image": "alex-santafe-01.jpg",
       "title": "Cyberbullying",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: Cyberbullying trial tests China`s determination to fight online abuse.",
       "alt": "An illustration by Alex Santafe depicting a girl crying while being bullyied over the internet",
-      "url": ""
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/09/26/cyberbullying-trial-tests-chinas-determination-to-fight-online-abuse/"
     },
     {
-      "id": 1,
-      "image": "alex-santafe-2.jpg",
+      "id": 2,
+      "image": "alex-santafe-02.jpg",
       "title": "Scientific discovery",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: Beijing wants its own EUV light source, a key part of the chip supply chain",
       "alt": "An illustration by Alex Santafe depicting a group of scientists in the verge of discovery",
-      "url": ""
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/08/03/beijing-pushes-china-to-develop-its-own-euv-light-source-a-key-part-of-chip-making-tech/"
     },
     {
       "id": 3,
-      "image": "alex-santafe-3.jpg",
-      "title": "Workplace observers",
-      "description": "Article about XXX in The China Project",
+      "image": "alex-santafe-03.jpg",
+      "title": "996 culture",
+      "description": "Editorial illustration for the article: TikTok`s hard lesson in the drawbacks of `996 culture`",
       "alt": "An illustration by Alex Santafe depicting a business owner watching over he's employees in China",
-      "url": ""
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/06/30/tiktoks-hard-lesson-in-the-drawbacks-of-996-culture/"
     },
     {
       "id": 4,
-      "image": "alex-santafe-4.jpg",
-      "title": "image 4",
-      "description": "image 4",
-      "alt": "image 4",
+      "image": "alex-santafe-04.jpg",
+      "title": "Pacific Lines",
+      "description": "Editorial illustration for the article: America`s convenient territories: How Washington is preparing to duel Beijing in the Pacific",
+      "alt": "An illustration by Alex Santafe depicting Chinese and US destroyers and a line in the middle of the Pacific Ocean",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 5,
-      "image": "alex-santafe-5.jpg",
-      "title": "image 5?",
-      "description": "image 4",
-      "alt": "image 25",
-      "url": ""
+      "image": "alex-santafe-05.jpg",
+      "title": "Rickshaw Boy",
+      "description": "Editorial illustration for the article: Lao She`s greatest work, `Rickshaw Boy`",
+      "alt": "An illustration by Alex Santafe depicting a the story by Lao She Rickshaw Boy in ancient Beijing",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/11/02/lao-shes-greatest-work-rickshaw-boy/"
     },
     {
       "id": 6,
-      "image": "alex-santafe-6.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "image": "alex-santafe-06.jpg",
+      "title": "Monkey Business",
+      "description": "Editorial illustration for the article: COVID`s monkey business: The booming market for laboratory test animals",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/06/13/covids-monkey-business-the-booming-market-for-laboratory-test-animals/"
     },
     {
       "id": 6,
-      "image": "alex-santafe-7.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "image": "alex-santafe-07.jpg",
+      "title": "China Live Streaming Shopping",
+      "description": "Editorial illustration for the article: Two billion eyes and a billion wallets: Short video ecommerce is thriving in China",
+      "alt": "An illustration by Alex Santafe depicting chinese woman on the sofa watching a live streaming session",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/03/31/two-billion-eyes-and-a-billion-wallets-short-video-ecommerce-is-thriving-in-china/"
     },
     {
       "id": 6,
-      "image": "alex-santafe-8.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "image": "alex-santafe-08.jpg",
+      "title": "China's Chipset game",
+      "description": "Editorial illustration for the article: The U.S. deals another blow to China's chip industry and Beijing reacts with a trillion yuan plan",
+      "alt": "An illustration by Alex Santafe depicting a game of Mahjong with chipsets and electric components",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/12/22/a-trillion-yuan-incentive-china-bolsters-its-semiconductor-sector/"
     },
     {
       "id": 6,
-      "image": "alex-santafe-9.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "image": "alex-santafe-09.jpg",
+      "title": "XPeng Crash",
+      "description": "Editorial illustration for the article: Electric car star XPeng had a disappointing first quarter",
+      "alt": "An illustration by Alex Santafe depicting an XPeng electric car crashed on candle bars",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/05/25/electric-car-star-xpeng-has-a-disappointing-first-quarter/"
     },
     {
       "id": 6,
       "image": "alex-santafe-10.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
-    },
-    {
-      "id": 6,
-      "image": "alex-santafe-11.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Biden drawing the line for China Tech firms",
+      "description": "Editorial illustration for the article: Biden to bar new U.S. money going to some China tech firms",
+      "alt": "An illustration by Alex Santafe depicting Joe Biden drawing a line on a map",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/08/10/biden-to-bar-new-u-s-money-going-to-some-china-tech-firms/"
     },
     {
       "id": 6,
       "image": "alex-santafe-12.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
-    },
-    {
-      "id": 6,
-      "image": "alex-santafe-13.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Coal usage plateaus in China",
+      "description": "Editorial illustration for the article: China is going to use less coal, despite reports to the contrary",
+      "alt": "An illustration by Alex Santafe depicting a coal worker shoveling onto a graph with windmills and solar panels in the background",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/09/21/china-is-going-to-use-less-coal-despite-reports-to-the-contrary/"
     },
     {
       "id": 6,
       "image": "alex-santafe-14.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Has China's AI bubble burst?",
+      "description": "Editorial illustration for the article: Has China's AI bubble burst?",
+      "alt": "An illustration by Alex Santafe depicting a robot chewing a bubble-gum bubble with the word AI on it about to burst",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/10/21/has-chinas-ai-bubble-burst/"
     },
     {
       "id": 6,
       "image": "alex-santafe-15.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Medical Robots",
+      "description": "Editorial illustration for the article: As China's population ages, medical robots and devices are booming Business & Technology",
+      "alt": "An illustration by Alex Santafe depicting a medical robot performing an operation",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/11/02/as-chinas-population-ages-medical-robots-and-devices-are-booming/"
     },
     {
       "id": 6,
       "image": "alex-santafe-16.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "11/11 Singles",
+      "description": "Editorial illustration for the article: The Singles Day shopping festival: Not so crazy anymore after all these years",
+      "alt": "An illustration by Alex Santafe depicting online customers bored of the offers for Singles Day 11",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/11/14/the-singles-day-shopping-festival-not-so-crazy-anymore-after-all-these-years/"
     },
     {
       "id": 6,
       "image": "alex-santafe-17.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "China's jet engines",
+      "description": "Editorial illustration for the article: China’s real but gradual progress in developing its own jet engines",
+      "alt": "An illustration by Alex Santafe depicting two visitors admiring the new China Jet Engine",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/11/17/chinas-real-but-gradual-progress-in-developing-its-own-jet-engines/"
     },
     {
       "id": 6,
       "image": "alex-santafe-18.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "VW in China having issues",
+      "description": "Editorial illustration for the article: VW's electric cars have software problems, and Chinese customers are angry",
+      "alt": "An illustration by Alex Santafe depicting a couple inside a VW car angry",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/12/08/black-screen-vws-chinese-customers-are-up-in-arms/"
     },
     {
       "id": 6,
       "image": "alex-santafe-19.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Chinese Lemons",
+      "description": "Editorial illustration for the article: There's a run on lemons in China because people think it cures COVID Business & Technology",
+      "alt": "An illustration by Alex Santafe depicting a street vendor of Lemons after selling out",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/12/16/theres-a-run-on-lemons-in-china-because-people-think-it-cures-covid/"
     },
     {
       "id": 6,
       "image": "alex-santafe-20.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Wind Power is taking off",
+      "description": "Editorial illustration for the article: Far out: Offshore floating wind power is taking off in China Business & Technology",
+      "alt": "An illustration by Alex Santafe depicting a chinese wind power floating plant",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/12/27/far-out-offshore-floating-wind-power-is-taking-off-in-china/"
     },
     {
       "id": 6,
       "image": "alex-santafe-21.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Chinese solar panel industry",
+      "description": "Editorial illustration for the article: With the price of silicon dropping, China's solar energy industry is set for another record-breaking year",
+      "alt": "An illustration by Alex Santafe depicting an infographic from silicon mining to solar panel production",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/01/10/with-the-price-of-silicon-dropping-chinas-solar-energy-industry-is-set-for-another-record-breaking-year/"
     },
     {
       "id": 6,
       "image": "alex-santafe-22.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Chinese - US investments",
+      "description": "Editorial illustration for the article: Under-the-radar private Chinese investments are a blind spot for U.S. regulators",
+      "alt": "An illustration by Alex Santafe depicting two scholars discussing China - US investments",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/01/20/under-the-radar-private-chinese-investments-are-a-blind-spot-for-u-s-regulators/"
     },
     {
       "id": 6,
       "image": "alex-santafe-23.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
-    },
-    {
-      "id": 6,
-      "image": "alex-santafe-24.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "US - China research breakup",
+      "description": "Editorial illustration for the article: Biotech could be next for the U.S.-China breakup",
+      "alt": "An illustration by Alex Santafe depicting 2 hands breaking a picture of a group of American and Chinese scientists posing",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/02/10/biotech-could-be-next-for-the-u-s-china-breakup/"
     },
     {
       "id": 6,
       "image": "alex-santafe-25.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "title": "China's Costco",
+      "description": "Editorial illustration for the article: Costco entered China at the right time but can its success last?",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/03/24/costco-entered-china-at-the-right-time-but-can-its-success-last/"
     },
     {
       "id": 6,
       "image": "alex-santafe-26.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Pet's Economy",
+      "description": "Editorial illustration for the article: After COVID, China's pet economy is booming",
+      "alt": "An illustration by Alex Santafe depicting a Chinese customers at the veterinary",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/11/21/after-covid-chinas-pet-economy-is-booming/"
     },
     {
       "id": 6,
       "image": "alex-santafe-27.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-28.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-29.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-30.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-31.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-32.jpg",
       "title": "Scientists behind the Great Wall",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-33.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-34.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "The rise of Empress Dowager Cixi",
+      "description": "Editorial illustration for the article: The rise of Empress Dowager Cixi",
+      "alt": "An illustration by Alex Santafe depicting Empress Dowager Cixi, Prince Gong and Empress Dowager Ci'an",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/11/02/the-rise-of-empress-dowager-cixi/"
     },
     {
       "id": 6,
       "image": "alex-santafe-35.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-36.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "Kids on screen",
+      "description": "Editorial illustration for the article: The Chinese government wants to limit screen time for kids",
+      "alt": "An illustration by Alex Santafe depicting a young boy watching a smartphone screen at night",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2023/08/02/the-chinese-government-wants-to-limit-screen-time-for-kids/"
     },
     {
       "id": 6,
       "image": "alex-santafe-37.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-38.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-39.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-40.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-41.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "The inside story of the Peace Corps in China",
+      "description": "Editorial illustration for the article: The inside story of the Peace Corps in China",
+      "alt": "An illustration by Alex Santafe depicting a young teacher of the Peace Corps with hes feet in the water",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2021/09/30/the-inside-story-of-the-peace-corps-in-china/"
     },
     {
       "id": 6,
       "image": "alex-santafe-42.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-43.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-44.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-45.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-46.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-47.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-49.jpg",
-      "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "url": ""
+      "title": "EV Battery cementeries",
+      "description": "Editorial illustration for the article: China's first generation electric cars are dying and no one knows how to deal with their batteries",
+      "alt": "An illustration by Alex Santafe depicting workers on a battery recycling plant in China",
+      "client": "The China Project",
+      "url": "https://thechinaproject.com/2022/07/28/chinas-first-generation-electric-cars-are-dying-and-no-one-knows-how-to-deal-with-their-batteries/"
     },
     {
       "id": 6,
       "image": "alex-santafe-50.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-51.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-52.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
+      "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
       "url": ""
     },
     {
       "id": 6,
       "image": "alex-santafe-67.jpg",
       "title": "Here, here",
-      "description": "Article about XXX in The China Project",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud"
+      "description": "Editorial illustration for the article: ",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
+      "url": ""
     }
   ]
 }

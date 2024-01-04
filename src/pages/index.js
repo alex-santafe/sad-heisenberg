@@ -31,7 +31,7 @@ const Testing = ({ data }) => {
   const headerChild = "Illustration"
   //const pics = data.allFile.edges.node
   //const image = getImage(data.allFile.edges.node)
-  const newData = data.allFile.edges.reverse()
+  const newData = data.allFile.edges.slice().reverse()
   //
   const [lightboxImage, setLightboxImage] = useState("")
   const [lightboxAltImage, setLightboxAltImage] = useState("")
@@ -39,14 +39,27 @@ const Testing = ({ data }) => {
   const [lightboxColor, setLightboxColor] = useState("")
   const [lightboxDescription, setLightboxDescription] = useState("")
   const [lightboxTextColor, setLightboxTextColor] = useState("")
+  const [lightboxClient, setLightboxClient] = useState("")
+  const [lightboxUrl, setLightboxUrl] = useState("")
 
-  const openLightbox = (src, alt, title, color, description, textcolor) => {
+  const openLightbox = (
+    src,
+    alt,
+    title,
+    color,
+    description,
+    textcolor,
+    client,
+    url
+  ) => {
     setLightboxImage(src)
     setLightboxAltImage(alt)
     setLightboxTitle(title)
     setLightboxColor(color)
     setLightboxDescription(description)
     setLightboxTextColor(textcolor)
+    setLightboxClient(client)
+    setLightboxUrl(url)
   }
 
   const closeLightbox = () => {
@@ -144,6 +157,8 @@ const Testing = ({ data }) => {
             const title = jItem.title
             const image = jItem.image
             const description = jItem.description
+            const client = jItem.client
+            const url = jItem.url
             //
             //
             //console.log(src)
@@ -166,7 +181,9 @@ const Testing = ({ data }) => {
                         title,
                         color,
                         description,
-                        textColor
+                        textColor,
+                        client,
+                        url
                       ) //,
                     // console.log("open!") // //
                   }
@@ -186,7 +203,6 @@ const Testing = ({ data }) => {
                     layout="constrained"
                     placeholder="dominantColor"
                   />
-                  <p>{image}</p>
                 </span>
               )
 
@@ -228,18 +244,41 @@ const Testing = ({ data }) => {
               >
                 {lightboxTitle}
               </span>
-              <p style={{ color: `${lightboxTextColor}` }}>
+              <p
+                style={{
+                  color: `${lightboxTextColor}`,
+                  margin: "0",
+                  maxWidth: "100%",
+                }}
+              >
                 {lightboxDescription}
+              </p>
+              <p
+                style={{
+                  color: `${lightboxTextColor}`,
+                  margin: "0",
+                  maxWidth: "100%",
+                }}
+              >
+                Illustration for:{" "}
+                <a
+                  href={lightboxUrl}
+                  style={{ color: `${lightboxTextColor}` }}
+                  target="_blank"
+                >
+                  {lightboxClient}
+                </a>
               </p>
             </div>
             <button
               type="button"
               style={{
-                position: "fixed",
+                position: "absolute",
                 width: "100%",
-                height: "100%",
+                height: "70%",
                 zIndex: "3",
                 cursor: "pointer",
+                bottom: "0",
               }}
               onClick={closeLightbox}
             />

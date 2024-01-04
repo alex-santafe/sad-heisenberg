@@ -364,6 +364,7 @@
     {
       "id": 6,
       "image": "alex-santafe-45.jpg",
+      "position": "right",
       "title": "China's rare earths",
       "description": "Editorial illustration for the article: More consolidation for China’s rare earths industry as Beijing seeks geopolitical leverage",
       "alt": "An illustration by Alex Santafe depicting an excavator working on mountains of rare earths of different colors",
@@ -383,11 +384,11 @@
     {
       "id": 6,
       "image": "alex-santafe-46.png",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "China's stock exchange",
+      "description": "Editorial illustration for the article: China's stock exchanges are delisting a record-high number of companies",
+      "alt": "An illustration by Alex Santafe depicting a stock exchange graph with a man being kicked out by a giant foot",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/06/14/chinas-stock-exchanges-are-delisting-a-record-high-number-of-companies/"
     },
     {
       "id": 6,
@@ -400,12 +401,12 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-50.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
+      "image": "alex-santafe-51.jpg",
+      "title": "Beer market in China",
+      "description": "Editorial illustration for the article: As beer sales in China lag, Budweiser sees a growth strategy in luxury products",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/08/12/as-beer-sales-in-china-lag-budweiser-sees-a-growth-strategy-in-luxury-products/"
     },
     {
       "id": 6,
@@ -418,7 +419,7 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-52.jpg",
+      "image": "alex-santafe-67.jpg",
       "title": "Here, here",
       "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
@@ -427,7 +428,34 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-67.jpg",
+      "image": "alex-santafe-70.jpg",
+      "title": "Here, here",
+      "description": "Editorial illustration for the article: ",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
+      "url": ""
+    },
+    {
+      "id": 6,
+      "image": "alex-santafe-85.jpg",
+      "title": "Here, here",
+      "description": "Editorial illustration for the article: ",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
+      "url": ""
+    },
+    {
+      "id": 6,
+      "image": "alex-santafe-94.jpg",
+      "title": "Here, here",
+      "description": "Editorial illustration for the article: ",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "client": "The China Project",
+      "url": ""
+    },
+    {
+      "id": 6,
+      "image": "alex-santafe-95.jpg",
       "title": "Here, here",
       "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",

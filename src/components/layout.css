@@ -227,7 +227,7 @@ tt:after {
   letter-spacing: -0.2em;
 }
 #___gatsby {
-  display: flex;
+  /* display: flex; */
 }
 pre code:before,
 pre code:after,

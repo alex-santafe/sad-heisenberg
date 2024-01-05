@@ -259,22 +259,24 @@ const Testing = ({ data }) => {
               >
                 {lightboxDescription}
               </p>
-              <p
-                style={{
-                  color: `${lightboxTextColor}`,
-                  margin: "0",
-                  maxWidth: "100%",
-                }}
-              >
-                Illustration for:{" "}
-                <a
-                  href={lightboxUrl}
-                  style={{ color: `${lightboxTextColor}` }}
-                  target="_blank"
+              {!!lightboxUrl && (
+                <p
+                  style={{
+                    color: `${lightboxTextColor}`,
+                    margin: "0",
+                    maxWidth: "100%",
+                  }}
                 >
-                  {lightboxClient}
-                </a>
-              </p>
+                  Illustration for:{" "}
+                  <a
+                    href={lightboxUrl}
+                    style={{ color: `${lightboxTextColor}` }}
+                    target="_blank"
+                  >
+                    {lightboxClient}
+                  </a>
+                </p>
+              )}
             </div>
             <button
               type="button"

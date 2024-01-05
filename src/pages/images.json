@@ -414,11 +414,11 @@
     {
       "id": 6,
       "image": "alex-santafe-67.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Instant retail",
+      "description": "Editorial illustration for the article: With 'instant retail,' brick-and-mortar stores are making a comeback",
+      "alt": "An illustration by Alex Santafe depicting a man ordering food online and a delivery guy quiuing at the restaurant with other customers",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2022/08/25/with-instant-online-retail-brick-and-mortar-stores-are-making-a-comeback/"
     },
     {
       "id": 6,
@@ -468,12 +468,10 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-031.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "client": "The China Project",
-      "url": ""
+      "image": "alex-santafe-023.jpg",
+      "title": "Peter Hessler's River Town",
+      "description": "Hessler interviewing a family on a river boat on the Yangtze",
+      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud"
     },
     {
       "id": 6,
@@ -486,57 +484,56 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-023.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
+      "image": "alex-santafe-031.jpg",
+      "title": "Foxconn",
+      "description": "Editorial piece about Foxconn factories in China. UNUSED",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
-      "client": "The China Project",
-      "url": ""
+      "client": "The China Project"
     },
     {
       "id": 6,
       "image": "alex-santafe-103.png",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "China Cultural crackdown",
+      "description": "Editorial illustration for the article: China's Cultural Crackdowns: A guide",
+      "alt": "An illustration by Alex Santafe depicting a chinese man practicing Tai Chi behind a Coca-Cola logo",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2021/12/02/chinas-cultural-crackdowns-a-guide/"
     },
     {
       "id": 6,
       "image": "alex-santafe-104.jpg",
       "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "description": "Editorial illustration for the article: Can Chinese discount ecommerce firm Temu charm America?",
+      "alt": "An illustration by Alex Santafe depicting woman hand's opening a package from TEMU to discover it is actually from Pinduoduo",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/01/30/can-chinese-discount-ecommerce-firm-temu-charm-america/"
     },
     {
       "id": 6,
       "image": "alex-santafe-105.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Solid State",
+      "description": "Editorial illustration for the article: Could Chinese companies produce revolutionary solid state batteries by 2024?",
+      "alt": "An illustration by Alex Santafe depicting a group of companies poiting at a Solid State EV Battery",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/01/13/could-chinese-companies-produce-revolutionary-solid-state-batteries-by-2024/"
     },
     {
       "id": 6,
       "image": "alex-santafe-106.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "Tiktok: to ban or not to ban",
+      "description": "Editorial illustration for the article: TikTok: to ban or not to ban?",
+      "alt": "An illustration by Alex Santafe depicting a Tiktok spokesperson with a desperate and an excited members of the audience",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/02/27/tiktok-to-ban-or-not-to-ban/"
     },
     {
       "id": 6,
       "image": "alex-santafe-107.jpg",
-      "title": "Here, here",
-      "description": "Editorial illustration for the article: ",
-      "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
+      "title": "MAGA Balloon",
+      "description": "Editorial illustration for the article:Downed spy balloon leads to cancellation of U.S.-China talks",
+      "alt": "An illustration by Alex Santafe depicting a man pointing a rifle at an air-balloon.",
       "client": "The China Project",
-      "url": ""
+      "url": "https://thechinaproject.com/2023/02/06/the-u-s-shot-down-a-surveillance-balloon-from-china-and-cancelled-a-planned-visit-by-antony-blinken-to-beijing/"
     },
     {
       "id": 6,

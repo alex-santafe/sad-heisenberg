@@ -46,16 +46,18 @@
       "client": "The China Project",
       "url": "https://thechinaproject.com/2023/11/02/lao-shes-greatest-work-rickshaw-boy/"
     },
+
     {
       "id": 6,
       "position": "left",
-      "image": "alex-santafe-06.jpg",
+      "image": "alex-santafe-06-no.jpg",
       "title": "Monkey Business",
       "description": "Editorial illustration for the article: COVID`s monkey business: The booming market for laboratory test animals",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
       "client": "The China Project",
       "url": "https://thechinaproject.com/2022/06/13/covids-monkey-business-the-booming-market-for-laboratory-test-animals/"
     },
+
     {
       "id": 6,
       "image": "alex-santafe-07.jpg",
@@ -217,7 +219,7 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-28.jpg",
+      "image": "alex-santafe-28-no.jpg",
       "title": "The Battle of Red Cliffs",
       "description": "Editorial illustration for the article: The Battle of Red Cliffs and the blurring of fact and fiction",
       "alt": "An illustration by Alex Santafe depicting a naval battle in the Yangtze River during Han Dinasty.",
@@ -466,7 +468,7 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-100.jpg",
+      "image": "alex-santafe-031.jpg",
       "title": "Here, here",
       "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",
@@ -484,7 +486,7 @@
     },
     {
       "id": 6,
-      "image": "alex-santafe-102.jpg",
+      "image": "alex-santafe-023.jpg",
       "title": "Here, here",
       "description": "Editorial illustration for the article: ",
       "alt": "An illustration by Alex Santafe depicting a group of scientists experimenting with monkeys and rats in the backgroud",

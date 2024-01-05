@@ -41,6 +41,7 @@ const Testing = ({ data }) => {
   const [lightboxTextColor, setLightboxTextColor] = useState("")
   const [lightboxClient, setLightboxClient] = useState("")
   const [lightboxUrl, setLightboxUrl] = useState("")
+  const [lightboxIndex, setLightboxIndex] = useState("")
 
   const openLightbox = (
     src,
@@ -50,7 +51,8 @@ const Testing = ({ data }) => {
     description,
     textcolor,
     client,
-    url
+    url,
+    index
   ) => {
     setLightboxImage(src)
     setLightboxAltImage(alt)
@@ -60,6 +62,7 @@ const Testing = ({ data }) => {
     setLightboxTextColor(textcolor)
     setLightboxClient(client)
     setLightboxUrl(url)
+    setLightboxIndex(index)
   }
 
   const closeLightbox = () => {
@@ -159,6 +162,7 @@ const Testing = ({ data }) => {
             const description = jItem.description
             const client = jItem.client
             const url = jItem.url
+            const index = jIndex
             //
             //
             //console.log(src)
@@ -183,7 +187,8 @@ const Testing = ({ data }) => {
                         description,
                         textColor,
                         client,
-                        url
+                        url,
+                        index
                       ) //,
                     // console.log("open!") // //
                   }
@@ -213,7 +218,7 @@ const Testing = ({ data }) => {
       </div>
 
       {lightboxImage && (
-        <div className="caja">
+        <div className="caja" key={lightboxIndex}>
           <button
             type="button"
             className="caja__close-button"

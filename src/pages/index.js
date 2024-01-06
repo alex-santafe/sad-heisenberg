@@ -10,18 +10,6 @@ import * as styles from "../components/index.module.css"
 import "../components/caja.css"
 import JSONData from "../pages/images.json"
 //
-const quotes = [
-  {
-    quote: "Alex is a delight to work with.",
-    person: "Jeremy Goldkorn",
-    media: ", Chief editor at The China Project",
-  },
-  {
-    quote: "We are so thankful for the illustrations you did for us.",
-    person: "Antonia Timmerman",
-    media: ", Southeast Asia Editor at The China-Global South Project",
-  },
-]
 
 /*
 const samplePageLinks = [
@@ -87,16 +75,21 @@ const Testing = ({ data }) => {
   //
   return (
     <Layout headerChild={headerChild}>
-      <div className="">
-        <Link to="/"></Link>
-        <h1
-          style={{ margin: "0", fontWeight: "400", fontSize: "var(--font-md)" }}
-        >
-          An award-winning visual artist and creative director, focusing on
-          illustration and product design.
-        </h1>
-        <p>From Barcelona, based in Hong Kong</p>
-        {/*
+      <div style={{ padding: "0 32px" }}>
+        <div className="">
+          <Link to="/"></Link>
+          <h1
+            style={{
+              margin: "0",
+              fontWeight: "400",
+              fontSize: "var(--font-md)",
+            }}
+          >
+            An award-winning visual artist and creative director, focusing on
+            illustration and product design.
+          </h1>
+          <p>From Barcelona, based in Hong Kong</p>
+          {/*
         <p className={styles.intro}>
           <b>Example pages:</b>{" "}
           {samplePageLinks.map((link, i) => (
@@ -107,17 +100,17 @@ const Testing = ({ data }) => {
           ))}
         </p>
           */}
-      </div>
-      <div className="gallery">
-        {newData?.map(item => {
-          //src, alt, title, description
-          const src = item.node.childImageSharp.gatsbyImageData
-          //console.log(src)
-          const color =
-            item.node.childImageSharp.gatsbyImageData.backgroundColor
-          //console.log(color)
-          //
-          /*
+        </div>
+        <div className="gallery">
+          {newData?.map(item => {
+            //src, alt, title, description
+            const src = item.node.childImageSharp.gatsbyImageData
+            //console.log(src)
+            const color =
+              item.node.childImageSharp.gatsbyImageData.backgroundColor
+            //console.log(color)
+            //
+            /*
           function pickTextColorBasedOnBgColorAdvanced(
             color,
             lightColor,
@@ -138,144 +131,134 @@ const Testing = ({ data }) => {
             return L > 0.179 ? darkColor : lightColor
           }
           */
-          function pickTextColorBasedOnBgColorAdvanced(
-            bgColor,
-            lightColor,
-            darkColor
-          ) {
-            var color =
-              bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor
-            var r = parseInt(color.substring(0, 2), 16) // hexToR
-            var g = parseInt(color.substring(2, 4), 16) // hexToG
-            var b = parseInt(color.substring(4, 6), 16) // hexToB
-            var uicolors = [r / 255, g / 255, b / 255]
-            var c = uicolors.map(col => {
-              if (col <= 0.03928) {
-                return col / 12.92
-              }
-              return Math.pow((col + 0.055) / 1.055, 2.4)
-            })
-            var L = 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
-            return L > 0.179 ? darkColor : lightColor
-          }
+            function pickTextColorBasedOnBgColorAdvanced(
+              bgColor,
+              lightColor,
+              darkColor
+            ) {
+              var color =
+                bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor
+              var r = parseInt(color.substring(0, 2), 16) // hexToR
+              var g = parseInt(color.substring(2, 4), 16) // hexToG
+              var b = parseInt(color.substring(4, 6), 16) // hexToB
+              var uicolors = [r / 255, g / 255, b / 255]
+              var c = uicolors.map(col => {
+                if (col <= 0.03928) {
+                  return col / 12.92
+                }
+                return Math.pow((col + 0.055) / 1.055, 2.4)
+              })
+              var L = 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+              return L > 0.179 ? darkColor : lightColor
+            }
 
-          const textColor = pickTextColorBasedOnBgColorAdvanced(
-            color,
-            "#FFFFFF",
-            "#000000"
-          )
-          //console.log(textColor)
-          //console.log(backgroundColor)
-          //console.log("item is " + item.node.relativePath)
-          //return JSONData.content.map((jItem, jIndex) => {
-          return JSONData.content.map((jItem, jIndex) => {
-            const alt = jItem.alt
-            const title = jItem.title
-            const image = jItem.image
-            const description = jItem.description
-            const client = jItem.client
-            const url = jItem.url
-            const index = jIndex
-            //const [isHovering, setIsHovering] = useState(false)
-            //
-            //
-            //console.log(src)
-            //console.log(alt)
-            //console.log(title)
-            //console.log("jItem is " + item.node.relativePath)
+            const textColor = pickTextColorBasedOnBgColorAdvanced(
+              color,
+              "#FFFFFF",
+              "#000000"
+            )
+            //console.log(textColor)
+            //console.log(backgroundColor)
+            //console.log("item is " + item.node.relativePath)
+            //return JSONData.content.map((jItem, jIndex) => {
+            return JSONData.content.map((jItem, jIndex) => {
+              const alt = jItem.alt
+              const title = jItem.title
+              const image = jItem.image
+              const description = jItem.description
+              const client = jItem.client
+              const url = jItem.url
+              const index = jIndex
+              //const [isHovering, setIsHovering] = useState(false)
+              //
+              //
+              //console.log(src)
+              //console.log(alt)
+              //console.log(title)
+              //console.log("jItem is " + item.node.relativePath)
 
-            if (image == item.node.relativePath)
-              return (
-                <span
-                  type="button"
-                  className="gallery__item"
-                  style={{ justifyContent: "center" }}
-                  key={jIndex}
-                  //onHover={}
-                  onClick={
-                    () =>
-                      openLightbox(
-                        src,
-                        alt,
-                        title,
-                        color,
-                        description,
-                        textColor,
-                        client,
-                        url,
-                        index
-                      ) //,
-                    // console.log("open!") // //
-                  }
-                >
-                  {/* <p>
+              if (image == item.node.relativePath)
+                return (
+                  <span
+                    type="button"
+                    className="gallery__item"
+                    style={{ justifyContent: "center" }}
+                    key={jIndex}
+                    //onHover={}
+                    onClick={
+                      () =>
+                        openLightbox(
+                          src,
+                          alt,
+                          title,
+                          color,
+                          description,
+                          textColor,
+                          client,
+                          url,
+                          index
+                        ) //,
+                      // console.log("open!") // //
+                    }
+                  >
+                    {/* <p>
                     {title} - {alt}
               </p> */}
 
-                  <GatsbyImage
-                    className="gallery__image"
-                    image={item.node.childImageSharp.gatsbyImageData}
-                    objectPosition={jItem.position}
-                    alt={alt}
-                    key={jIndex}
-                    loading="lazy"
-                    width="250px"
-                    height="250px"
-                    layout="constrained"
-                    placeholder="dominantColor"
-                  />
+                    <GatsbyImage
+                      className="gallery__image"
+                      image={item.node.childImageSharp.gatsbyImageData}
+                      objectPosition={jItem.position}
+                      alt={alt}
+                      key={jIndex}
+                      loading="lazy"
+                      width="250px"
+                      height="250px"
+                      layout="constrained"
+                      placeholder="dominantColor"
+                    />
+                  </span>
+                )
+
+              //}
+            })
+          })}
+        </div>
+
+        {lightboxImage && (
+          <div className="caja" key={lightboxIndex}>
+            <button
+              type="button"
+              className="caja__close-button"
+              onClick={closeLightbox}
+              style={{
+                color: `${lightboxTextColor}`,
+              }}
+            >
+              &times;
+            </button>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div style={{ width: "100%", padding: "0 1rem" }}>
+                <span
+                  className="caja_title"
+                  style={{
+                    color: `${lightboxTextColor}`,
+                    fontSize: `var(--font-lg)`,
+                    fontWeight: "700",
+                    marginBottom: "0",
+                    fontFamily: `Hanken Grotesk`,
+                    textTransform: "capitalize",
+                  }}
+                >
+                  {lightboxTitle}
                 </span>
-              )
-
-            //}
-          })
-        })}
-      </div>
-
-      {lightboxImage && (
-        <div className="caja" key={lightboxIndex}>
-          <button
-            type="button"
-            className="caja__close-button"
-            onClick={closeLightbox}
-            style={{
-              color: `${lightboxTextColor}`,
-            }}
-          >
-            &times;
-          </button>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <div style={{ width: "100%", padding: "0 1rem" }}>
-              <span
-                className="caja_title"
-                style={{
-                  color: `${lightboxTextColor}`,
-                  fontSize: `var(--font-lg)`,
-                  fontWeight: "700",
-                  marginBottom: "0",
-                  fontFamily: `Hanken Grotesk`,
-                  textTransform: "capitalize",
-                }}
-              >
-                {lightboxTitle}
-              </span>
-              <p
-                style={{
-                  color: `${lightboxTextColor}`,
-                  margin: "0",
-                  maxWidth: "100%",
-                }}
-              >
-                {lightboxDescription}
-              </p>
-              {!!lightboxUrl && (
                 <p
                   style={{
                     color: `${lightboxTextColor}`,
@@ -283,139 +266,70 @@ const Testing = ({ data }) => {
                     maxWidth: "100%",
                   }}
                 >
-                  Illustration for:{" "}
-                  <a
-                    href={lightboxUrl}
-                    style={{ color: `${lightboxTextColor}` }}
-                    target="_blank"
-                  >
-                    {lightboxClient}
-                  </a>
+                  {lightboxDescription}
                 </p>
-              )}
-            </div>
-            <button
-              type="button"
-              style={{
-                position: "absolute",
-                width: "100%",
-                height: "70%",
-                zIndex: "3",
-                cursor: "pointer",
-                bottom: "0",
-              }}
-              onClick={closeLightbox}
-            />
-            <GatsbyImage
-              className="gallery__image"
-              image={lightboxImage}
-              alt={lightboxAltImage}
-              loading="lazy"
-              style={{ margin: "1rem", maxHeight: "80vh" }}
-              placeholder="dominantColor"
-              layout="fixed"
-              objectFit="contain"
-              //onClick={closeLightbox}
-              onClick={closeLightbox}
-            />
-            {/*<p>{lightboxColor}</p>*/}
+                {!!lightboxUrl && (
+                  <p
+                    style={{
+                      color: `${lightboxTextColor}`,
+                      margin: "0",
+                      maxWidth: "100%",
+                    }}
+                  >
+                    Illustration for:{" "}
+                    <a
+                      href={lightboxUrl}
+                      style={{ color: `${lightboxTextColor}` }}
+                      target="_blank"
+                    >
+                      {lightboxClient}
+                    </a>
+                  </p>
+                )}
+              </div>
+              <button
+                type="button"
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "70%",
+                  zIndex: "3",
+                  cursor: "pointer",
+                  bottom: "0",
+                }}
+                onClick={closeLightbox}
+              />
+              <GatsbyImage
+                className="gallery__image"
+                image={lightboxImage}
+                alt={lightboxAltImage}
+                loading="lazy"
+                style={{ margin: "1rem", maxHeight: "80vh" }}
+                placeholder="dominantColor"
+                layout="fixed"
+                objectFit="contain"
+                //onClick={closeLightbox}
+                onClick={closeLightbox}
+              />
+              {/*<p>{lightboxColor}</p>*/}
 
-            <button
-              type="button"
-              className="caja__bg"
-              style={{ backgroundColor: `${lightboxColor}` }}
-              onClick={closeLightbox}
-              //style={{ background: { dominantColor } }}
-            />
+              <button
+                type="button"
+                className="caja__bg"
+                style={{ backgroundColor: `${lightboxColor}` }}
+                onClick={closeLightbox}
+                //style={{ background: { dominantColor } }}
+              />
 
-            {/* <img
+              {/* <img
               className="caja__image"
               src={lightboxImage}
               alt={lightboxAltImage}
               onClick={closeLightbox}
           /> */}
-          </div>
-        </div>
-      )}
-      <div>
-        {/*Photos.map((image, i) => (
-          <React.Fragment key={image.src}>
-            {image.title}
-            <StaticImage
-              key={i}
-              image={image.src}
-              loading="eager"
-              width={64}
-              quality={95}
-              formats={["auto", "webp", "avif"]}
-            />
-          </React.Fragment>
-        )) */}
-      </div>
-      <div
-        className="quote"
-        style={{
-          margin: "2rem 0",
-          /*display: "flex",*/
-          //background: "#dadada",
-          background: "var(--color-primary)",
-          color: "#FFFFFF",
-          padding: "3rem",
-          display: "flex",
-          gap: "3rem",
-        }}
-      >
-        <div style={{ display: "flex", width: "50%" }}>
-          <h2
-            style={{
-              display: "flex",
-              //fontSize: "2em",
-              marginBlockStart: "0.67em",
-              margin: "0px",
-              whiteSpace: "pre-line",
-              //fontWeight: "bold",
-              fontSize: `2em`,
-              textDecoration: `none`,
-              fontFamily: `Hanken Grotesk`,
-              fontWeight: `700`,
-              letterSpacing: `-1.7px`,
-              lineHeight: `100%`,
-            }}
-          >
-            {`Want to collaborate? \nDrop me a line`}
-          </h2>
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", width: "40%" }}>
-          {quotes.map((item, index) => (
-            <div
-              style={{
-                //width: "66%",
-                //borderLeft: "2px solid #FFFFFF",
-                paddingLeft: "1rem",
-                marginBottom: "1rem",
-                //content: "“",
-              }}
-            >
-              <p
-                style={{
-                  //marginTop: "1rem",
-                  fontSize: "1.75rem",
-                  maxWidth: "100%",
-                  lineHeight: "100%",
-
-                  marginBottom: "0",
-                }}
-              >
-                "{item.quote}"
-              </p>
-
-              <p>
-                <strong>{item.person}</strong>
-                {item.media}
-              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        )}
       </div>
     </Layout>
   )

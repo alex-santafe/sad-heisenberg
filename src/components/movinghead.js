@@ -186,7 +186,7 @@ const getWidth = () => window.innerWidth
               fontWeight: `700`,
               letterSpacing: `-1px`,
               lineHeight: `100%`,
-              color: `#FFFFFF`,
+              color: `var(--color-font)`,
               //color: `#2929e9`,
               marginLeft: "2rem",
               //paddingBottom: "1rem",
@@ -201,7 +201,7 @@ const getWidth = () => window.innerWidth
               className="caja__close-button"
               onClick={() => setNavbarOpen(prev => !prev)}
               style={{
-                color: "#FFFFFF",
+                color: "var(--color-font)",
                 fontSize: "48px",
                 top: ".5rem",
                 right: "1rem",
@@ -248,7 +248,7 @@ const getWidth = () => window.innerWidth
                 textDecoration: `none`,
 
                 lineHeight: `100%`,
-                color: `#ffffff`,
+                color: `var(--color-font)`,
               }}
             >
               <p>Contact</p>
@@ -259,10 +259,13 @@ const getWidth = () => window.innerWidth
                   fontSize: "var(--font-md)",
                 }}
               >
-                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                <li
+                  style={{ color: "var(--color-font)" }}
+                  className="socialLinks"
+                >
                   <a
                     href="mailto:alexsantafe@gmail.com"
-                    style={{ color: "#FFFFFF" }}
+                    style={{ color: "var(--color-font)" }}
                     target="_blank"
                   >
                     <FontAwesomeIcon
@@ -272,10 +275,13 @@ const getWidth = () => window.innerWidth
                     Email
                   </a>
                 </li>
-                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                <li
+                  style={{ color: "var(--color-font)" }}
+                  className="socialLinks"
+                >
                   <a
                     href="https://www.linkedin.com/in/alexsantafe/"
-                    style={{ color: "#FFFFFF" }}
+                    style={{ color: "var(--color-font)" }}
                     target="_blank"
                   >
                     <FontAwesomeIcon
@@ -285,10 +291,13 @@ const getWidth = () => window.innerWidth
                     LinkedIn
                   </a>
                 </li>
-                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                <li
+                  style={{ color: "var(--color-font)" }}
+                  className="socialLinks"
+                >
                   <a
                     href="https://www.instagram.com/alexsantafe/"
-                    style={{ color: "#FFFFFF", gap: "1.25rem" }}
+                    style={{ color: "var(--color-font)", gap: "1.25rem" }}
                     target="_blank"
                   >
                     <FontAwesomeIcon
@@ -298,10 +307,13 @@ const getWidth = () => window.innerWidth
                     Instagram
                   </a>
                 </li>
-                <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                <li
+                  style={{ color: "var(--color-font)" }}
+                  className="socialLinks"
+                >
                   <a
                     href="https://www.instagram.com/alexsantafe/"
-                    style={{ color: "#FFFFFF", gap: "1.25rem" }}
+                    style={{ color: "var(--color-font)", gap: "1.25rem" }}
                     target="_blank"
                   >
                     <FontAwesomeIcon
@@ -314,7 +326,7 @@ const getWidth = () => window.innerWidth
                 {/*
                     
                     {socialLinks.map(link => (
-                      <li style={{ color: "#FFFFFF" }} className="socialLinks">
+                      <li style={{ color: "var(--color-font)" }} className="socialLinks">
                         <FontAwesomeIcon icon={`${link.description}`} />
                         {/* <FontAwesomeIcon icon={faWeixin} />
                           <FontAwesomeIcon icon={faSquareWhatsapp} />
@@ -322,7 +334,7 @@ const getWidth = () => window.innerWidth
                         {console.log(link.description)}
                         <a
                           href={`${link.url}`}
-                          style={{ color: "#FFFFFF" }}
+                          style={{ color: "var(--color-font)" }}
                           target="_blank"
                         >
                           {link.text}

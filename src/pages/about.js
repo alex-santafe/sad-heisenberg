@@ -27,7 +27,7 @@ const SecondPage = () => (
           margin: "auto",
         }}
       >
-        <h1>Hello I'm Alex Santafe</h1>
+        <h1 style={{ marginBottom: "1rem" }}>Hello I'm Alex Santafe</h1>
         <p>
           An award-winning visual artist and creative director, focusing on
           illustration and product design with a passion for creating useful,

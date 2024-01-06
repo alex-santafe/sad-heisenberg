@@ -12,6 +12,7 @@ import Header from "./header"
 import "./layout.css"
 import "../fonts/fonts.css"
 import MovingHead from "../components/movinghead"
+import Cta from "../components/cta"
 
 /*
 export default function Layout({ children }) {
@@ -22,6 +23,7 @@ export default function Layout({ children }) {
   )
 }
 */
+
 const Layout = ({ children, headerChild }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -43,27 +45,27 @@ const Layout = ({ children, headerChild }) => {
       >
         {headerChild}
       </Header>
-      <div
+      {/*<div
         style={{
           margin: `0 auto`,
           //maxWidth: `var(--size-content)`,
           //padding: `var(--size-gutter)`,
-          padding: "0 32px",
+          //padding: "0 32px",
         }}
-      >
-        <main>{children}</main>
-      </div>
+      > */}
+      <main>{children}</main>
+      <Cta />
       <footer
         style={{
           background: `var(--color-primary)`,
-          marginTop: `var(--space-5)`,
+          //marginTop: `var(--space-5)`,
           paddingLeft: `var(--space-5)`,
           paddingTop: `var(--space-4)`,
           paddingBottom: `var(--space-4)`,
           fontSize: `var(--font-sm)`,
           //padding: `var(--space-2)`,
           // paddingTop: `var(--space-3)`,
-          color: `#FFFFFF`,
+          color: `var(--color-font)`,
         }}
       >
         © {new Date().getFullYear()} &middot; Alex Santafé - Built with

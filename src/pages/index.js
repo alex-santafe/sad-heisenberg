@@ -246,6 +246,7 @@ const Testing = ({ data }) => {
                   fontWeight: "700",
                   marginBottom: "0",
                   fontFamily: `Hanken Grotesk`,
+                  textTransform: "capitalize",
                 }}
               >
                 {lightboxTitle}

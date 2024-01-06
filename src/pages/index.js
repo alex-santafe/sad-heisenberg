@@ -8,8 +8,21 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import "../components/caja.css"
-
 import JSONData from "../pages/images.json"
+//
+const quotes = [
+  {
+    quote: "Alex is a delight to work with.",
+    person: "Jeremy Goldkorn",
+    media: ", Chief editor at The China Project",
+  },
+  {
+    quote: "We are so thankful for the illustrations you did for us.",
+    person: "Antonia Timmerman",
+    media: ", Southeast Asia Editor at The China-Global South Project",
+  },
+]
+
 /*
 const samplePageLinks = [
   {
@@ -163,6 +176,7 @@ const Testing = ({ data }) => {
             const client = jItem.client
             const url = jItem.url
             const index = jIndex
+            //const [isHovering, setIsHovering] = useState(false)
             //
             //
             //console.log(src)
@@ -177,6 +191,7 @@ const Testing = ({ data }) => {
                   className="gallery__item"
                   style={{ justifyContent: "center" }}
                   key={jIndex}
+                  //onHover={}
                   onClick={
                     () =>
                       openLightbox(
@@ -336,6 +351,40 @@ const Testing = ({ data }) => {
             />
           </React.Fragment>
         )) */}
+      </div>
+      <div
+        className="quote"
+        style={{ margin: "4rem 0", /*display: "flex",*/ gap: "3rem" }}
+      >
+        {quotes.map((item, index) => (
+          <div
+            style={{
+              //width: "66%",
+              borderLeft: "2px solid var(--color-primary)",
+              paddingLeft: "1rem",
+              marginBottom: "1rem",
+              //content: "“",
+            }}
+          >
+            <p
+              style={{
+                marginTop: "1rem",
+                fontSize: "1.75rem",
+                maxWidth: "100%",
+                lineHeight: "100%",
+
+                marginBottom: "0",
+              }}
+            >
+              "{item.quote}"
+            </p>
+
+            <p>
+              <strong>{item.person}</strong>
+              {item.media}
+            </p>
+          </div>
+        ))}
       </div>
     </Layout>
   )

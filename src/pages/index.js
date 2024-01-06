@@ -354,37 +354,68 @@ const Testing = ({ data }) => {
       </div>
       <div
         className="quote"
-        style={{ margin: "4rem 0", /*display: "flex",*/ gap: "3rem" }}
+        style={{
+          margin: "2rem 0",
+          /*display: "flex",*/
+          //background: "#dadada",
+          background: "var(--color-primary)",
+          color: "#FFFFFF",
+          padding: "3rem",
+          display: "flex",
+          gap: "3rem",
+        }}
       >
-        {quotes.map((item, index) => (
-          <div
+        <div style={{ display: "flex", width: "50%" }}>
+          <h2
             style={{
-              //width: "66%",
-              borderLeft: "2px solid var(--color-primary)",
-              paddingLeft: "1rem",
-              marginBottom: "1rem",
-              //content: "“",
+              display: "flex",
+              //fontSize: "2em",
+              marginBlockStart: "0.67em",
+              margin: "0px",
+              whiteSpace: "pre-line",
+              //fontWeight: "bold",
+              fontSize: `2em`,
+              textDecoration: `none`,
+              fontFamily: `Hanken Grotesk`,
+              fontWeight: `700`,
+              letterSpacing: `-1.7px`,
+              lineHeight: `100%`,
             }}
           >
-            <p
+            {`Want to collaborate? \nDrop me a line`}
+          </h2>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", width: "40%" }}>
+          {quotes.map((item, index) => (
+            <div
               style={{
-                marginTop: "1rem",
-                fontSize: "1.75rem",
-                maxWidth: "100%",
-                lineHeight: "100%",
-
-                marginBottom: "0",
+                //width: "66%",
+                //borderLeft: "2px solid #FFFFFF",
+                paddingLeft: "1rem",
+                marginBottom: "1rem",
+                //content: "“",
               }}
             >
-              "{item.quote}"
-            </p>
+              <p
+                style={{
+                  //marginTop: "1rem",
+                  fontSize: "1.75rem",
+                  maxWidth: "100%",
+                  lineHeight: "100%",
 
-            <p>
-              <strong>{item.person}</strong>
-              {item.media}
-            </p>
-          </div>
-        ))}
+                  marginBottom: "0",
+                }}
+              >
+                "{item.quote}"
+              </p>
+
+              <p>
+                <strong>{item.person}</strong>
+                {item.media}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </Layout>
   )

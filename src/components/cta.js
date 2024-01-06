@@ -2,7 +2,7 @@ import * as React from "react"
 
 const quotes = [
   {
-    quote: "Alex is a delight to work with.",
+    quote: "Alex is such a delight to work with.",
     person: "Jeremy Goldkorn",
     media: ", Chief editor at The China Project",
   },
@@ -69,13 +69,13 @@ function Cta() {
                 maxWidth: "100%",
                 lineHeight: "100%",
 
-                marginBottom: "0",
+                marginBottom: "1rem",
               }}
             >
               "{item.quote}"
             </p>
 
-            <p>
+            <p style={{ lineHeight: "100%" }}>
               <strong>{item.person}</strong>
               {item.media}
             </p>

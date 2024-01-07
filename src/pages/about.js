@@ -27,12 +27,13 @@ const SecondPage = () => (
           margin: "auto",
         }}
       >
-        <h1 style={{ marginBottom: "1rem" }}>Hello I'm Alex Santafe</h1>
+        <h1 style={{ marginBottom: "1rem" }}>👋 Alex Santafe</h1>
         <p>
-          An award-winning visual artist and creative director, focusing on
-          illustration and product design with a passion for creating useful,
-          engaging & beautiful things. Originally from Barcelona, have been
-          living Beijing for more than 8 years, now based in Hong Kong.
+          I'm Alex, An award-winning visual artist and creative director,
+          focusing on illustration and product design with a passion for
+          creating useful, engaging & beautiful things. Originally from
+          Barcelona, have been living Beijing for more than 8 years, now based
+          in Hong Kong.
         </p>
         <p>
           An award-winning visual artist and creative director, focusing on

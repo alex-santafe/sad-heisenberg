@@ -57,6 +57,7 @@ const Layout = ({ children, headerChild }) => {
       <Cta />
       <footer
         style={{
+          borderTop: `1px solid #ffe36f`,
           background: `var(--color-primary)`,
           //marginTop: `var(--space-5)`,
           paddingLeft: `var(--space-5)`,
@@ -68,9 +69,10 @@ const Layout = ({ children, headerChild }) => {
           color: `var(--color-font)`,
         }}
       >
-        © {new Date().getFullYear()} &middot; Alex Santafé - Built with
-        {` `}
-        Gatsby
+        © {new Date().getFullYear()} &middot; Alex Santafé -{" "}
+        {/* Made using 🥢 in
+        Hong Kong -- */}
+        Made with a lot of 🥟 in Hong Kong
       </footer>
     </>
   )

@@ -52,12 +52,13 @@ function Cta() {
         <p>hello</p>
       </div>
       <div style={{ display: "flex", flexDirection: "column", width: "40%" }}>
+        <p>Nice words from previous collaborators</p>
         {quotes.map((item, index) => (
           <div
             style={{
               //width: "66%",
               //borderLeft: "2px solid var(--color-font)",
-              paddingLeft: "1rem",
+              //paddingLeft: "1rem",
               marginBottom: "1rem",
               //content: "“",
             }}

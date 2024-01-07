@@ -19,6 +19,21 @@ import {
 import { Link } from "gatsby"
 import "../components/hairstyle.scss"
 
+const colors = ["#ffcd00", "#e83808", "#187838"]
+//const [colorValue, setColorValue] = useState(0)
+
+/*
+const [randomColor, set] = useState(false)
+const randomColor = colors[Math.floor(Math.random() * colors.length)]
+function changeBackground() {
+  //let background = "#" + ((1<<24)*Math.random() | 0).toString(16);
+  const randomColor = colors[Math.floor(Math.random() * colors.length)]
+  this.setState({ randomColor })
+  console.log(randomColor)
+  //this.setState({randomColor});
+}
+*/
+
 const samplePageLinks = [
   {
     text: "Illustration",
@@ -102,17 +117,17 @@ function MovingHead({ siteTitle }) {
   const closeMenu = () => {
     setNavbarOpen(false)
   }
-  const strings = ["Hello", "Hola", "你好", "Salut"]
+  //const strings = ["Hello", "Hola", "你好", "Salut"]
 
   // Utility function to choose a random value from the language array
-  function randomLanguage() {
+  /*function randomLanguage() {
     return strings[Math.floor(Math.random() * strings.length)]
   }
 
-  const [hello, setHello] = React.useState(strings[0])
+  const [hello, setHello] = React.useState(strings[0])*/
 
   // When the user clicks we change the header language
-  const handleChangeHello = () => {
+  /*const handleChangeHello = () => {
     // Choose a new Hello from our languages
     const newHello = randomLanguage() + " - Alex Santafe"
     // Call the function to set the state string in our component
@@ -121,7 +136,7 @@ function MovingHead({ siteTitle }) {
   }
   setTimeout(() => handleChangeHello(), 1000)
   //const [hasWiggled, setHasWiggled] = useState(false)
-  //const [style, trigger] = useWiggle({ x: 5, y: 5, scale: 1 })
+  //const [style, trigger] = useWiggle({ x: 5, y: 5, scale: 1 })*/
   const [isHovering, setIsHovering] = useState(false)
 
   const toggleAnimation = () => {
@@ -155,18 +170,22 @@ const getWidth = () => window.innerWidth
     animation: `x 7s linear infinite alternate, y 3s linear infinite alternate`,
     transform: `translateX(${x}%) translateY(${y}%)`,
   }
-
+  //console.log(randomColor)
   return (
     <>
       <div
-        className={`menu-nav${navbarOpen ? " show-menu" : ""}`}
-        styles={{
-          //background: `var(--color-primary)`,
-          width: `100%`,
+        className={`menu-nav ${navbarOpen ? " show-menu" : ""}`}
+        style={
+          {
+            //background: `var(--color-primary)`,
+            /*width: `100%`,
           height: `100%`,
           margin: `2rem`,
-          display: `flex`,
-        }}
+          display: `flex`,*/
+            //background: { randomColor },
+            //background: this.state.randomColor,
+          }
+        }
       >
         <div
           style={{
@@ -359,6 +378,8 @@ const getWidth = () => window.innerWidth
             handleToggle()
             setIsHovering(!isHovering)
             setNavbarOpen(prev => !prev)
+            //colorChange,
+            //changeBackground()
           }}
         >
           <div
@@ -368,6 +389,9 @@ const getWidth = () => window.innerWidth
               //console.log("clickhead"),
               setIsHovering(!isHovering),
               setNavbarOpen(prev => !prev)
+
+              //this.changeBackground
+              //{this.getElementByClass('menu-nav').style.color = random_color},
             )}
           >
             <img
